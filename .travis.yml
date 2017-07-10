@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "6"
+
+git:
+  submodules: false
+
+install:
+  - git clone https://github.com/SaTrek/earthtrek-sdk
+
+before_script:
+  - npm install
+
+script:
+  - npm test
